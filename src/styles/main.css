@@ -1,0 +1,36 @@
+#form-Container {
+    display: flex;
+    flex-direction: column;
+}
+
+#park-article {
+    display: flex;
+    flex-direction: row;
+    border: 5px solid green;
+    padding: 10px;
+    margin: 10px;
+}
+
+#food-article {
+    display: flex;
+    flex-direction: row;
+    border: 5px solid blue;
+    padding: 10px;
+    margin: 10px;
+}
+
+#meet-article {
+    display: row;
+    flex-direction: column;
+    border: 5px solid red;
+    padding: 10px;
+    margin: 10px;
+}
+
+#music-article {
+    display: flex;
+    flex-direction: row;
+    border: 5px solid purple;
+    padding: 10px;
+    margin: 10px;
+}
