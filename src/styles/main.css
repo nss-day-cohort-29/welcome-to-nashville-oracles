@@ -3,6 +3,38 @@
     flex-direction: column;
 }
 
+#feature-article {
+    display: flex;
+    flex-direction: row;
+    border: 5px dashed green;
+    padding: 5px;
+    margin: 10px;
+}
+
+#cuisine-article {
+    display: flex;
+    flex-direction: row;
+    border: 5px dashed blue;
+    padding: 5px;
+    margin: 10px;
+}
+
+#topic-article {
+    display: flex;
+    flex-direction: row;
+    border: 5px dashed red;
+    padding: 5px;
+    margin: 10px;
+}
+
+#genre-article {
+    display: flex;
+    flex-direction: row;
+    border: 5px dashed purple;
+    padding: 5px;
+    margin: 10px;
+}
+
 #park-article {
     display: flex;
     flex-direction: row;
@@ -20,8 +52,8 @@
 }
 
 #meet-article {
-    display: row;
-    flex-direction: column;
+    display: flex;
+    flex-direction: row;
     border: 5px solid red;
     padding: 10px;
     margin: 10px;

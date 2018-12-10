@@ -4,12 +4,14 @@ domBuilder.appendInputForm();
 //domBuilder.appendSearchContainer();
 domBuilder.appendDataContainers();
 
-// data.getResources()
-// .then(resourcesArray => {
-//   console.log(resourcesArray);
-//   let resourcesFragments = domComponents.createResourcesDocumentFragments(resourcesArray);
-//   console.log(resourcesFragments);
-//   domBuilder.appendAllResources(resourcesFragments);
+// The function getData() is in data.js
+
+// data.getData()
+// .then(dataArray => {
+//   console.log(dataArray);
+//   let dataFragments = domComponents.createDataDocumentFragments(dataArray);
+//   console.log(dataFragments);
+//   domBuilder.appendAllData(dataFragments);
 // });
 
 //              ****     Suggestions for the Group       *****
