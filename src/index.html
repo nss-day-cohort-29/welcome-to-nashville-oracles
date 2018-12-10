@@ -7,47 +7,16 @@
     <link rel="stylesheet" href="./styles/main.css">
     <title>Application Title</title>
   </head>
-  <body>
-
-    <div id="display-container"></div>    <!--New id: form-container (Jisie's example)-->                     
-
-<!-- appendInputForm() {
-  let divFormContainer = document.querySelector("#form-container");
-  // This is the form container
-  divFormContainer.innerHTML = 
-} -->
-
+  <body>                
     
     <h1>Welcome to Nashville</h1>
     <h3>Search for stuff to do today</h3>
 
     <div id="form-container">search container here</div> 
-      <!--Placeholders for visualization; But we will populate HTML to look like this via the DOM-->
-      <!-- <form>
-        <fieldset>
-          *Changed paragraphs to articles*
-          <p> 
-            <input type="text" id="parksSearch" placeholder="Parks Search">
-            <button type="submit" id="parksBtn">Search Parks</button>
-          </p>
-          <p>
-            <input type="text" id="foodSearch" placeholder="Restaurants Search">
-            <button type="submit" id="foodBtn">Search Restaurants</button>
-          </p>
-          <p>
-            <input type="text" id="meetSearch" placeholder="Meetups Search">
-            <button type="submit" id="meetBtn">Search Meetups</button>
-          </p>
-          <p>
-            <input type="text" id="musicSearch" placeholder="Concerts Search">
-            <button type="submit" id="musicBtn">Search Concerts</button>
-          </p>
-        </fieldset>
-      </form> -->
-    <div id="containerResults">results go here</div>  <!--Updated containerResults to display-container -->
+    <h2>Search Results</h2>
+    <div id="display-container">results go here</div>  
+    <h4>My Itinerary</h4>
     <div id="containerItinerary">itinerary goes here</div>
-    <!--End of Placeholders-->
-
 
     <script src="./scripts/data.js"></script>
     <script src="./scripts/domBuilder.js"></script>
