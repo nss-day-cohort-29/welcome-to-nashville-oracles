@@ -58,10 +58,10 @@ cuisinesArray = [
 //       "cuisine_name": "African"
 //     }
 //   },
-{/* <article id="cuisine-article">
+/* <article id="cuisine-article">
   <input type="text" name="Cuisines" id="cuisine-input" placeholder="Search by Cuisine">
   <button type="submit" id="cuisine-search">Search RESTAURANTS</button>
-</article> */}
+</article> */
 
 let cuisineSearchBtn = document.querySelector("#cuisine-search");
 cuisineSearchBtn.addEventListener("click", () => {
@@ -79,10 +79,10 @@ cuisineSearchBtn.addEventListener("click", () => {
 // Query Zomato with the number in cuisine_id to get a list of matching
 // restaurants (with their addresses) and populate <article id="restaurant-article">
 
-{/* <article id="restaurant-article">
+/* <article id="restaurant-article">
       <input type="text" name="Restaurants" id="food-return" placeholder="List of Restaurants">
       <button type="submit" id="food-save">Save</button>
-</article> */}
+</article> */
 
 let restaurantSaveBtn = document.querySelector("#food-save");
 restaurantSaveBtn.addEventListener("click", () => {
@@ -90,10 +90,6 @@ restaurantSaveBtn.addEventListener("click", () => {
     console.log("Input values: ", restVar);
 });
 
-/* <article id="food-article">
-    <input type="text" name="Cuisines" id="food-return" placeholder="List of Restaurants">
-    <button type="submit" id="food-save">Save</button>
-</article> */
 console.log("goodbye")
 
 // Form Validation - If blank ... This field is required to search

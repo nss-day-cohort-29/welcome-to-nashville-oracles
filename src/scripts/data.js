@@ -36,24 +36,26 @@ const data = { // Initialized "data" an object with two properties
             dataArray = parsedData;
             console.log(dataArray);
     });
+}
+}
 
-    const data = {
-        getResources() {
-          return fetch(“https:developers.zomato.com/api/v2.1/search?entity_id=1138&entity_type=city“, {
-            headers: {
-              “user-key”: “e1d3af0b02cdacf4bfda4e12e2efcd99"
-            }})
-           .then(function(response){
-            response.json();
-           })
-           .then(response => response.json());
-        }//,
-        // queryResources(userInput) {
-            //   return fetch(`http://localhost:8088/resources?q=${userInput}`)
-            //   .then(response => response.json());
-            // }
-        };
-        console.log(data);
+    // const data = {
+    //     getResources() {
+    //       return fetch(“https:developers.zomato.com/api/v2.1/search?entity_id=1138&entity_type=city“, {
+    //         headers: {
+    //           “user-key”: “e1d3af0b02cdacf4bfda4e12e2efcd99"
+    //         }})
+    //        .then(function(response){
+    //         response.json();
+    //        })
+    //        .then(response => response.json());
+    //     }//,
+    //     // queryResources(userInput) {
+    //         //   return fetch(`http://localhost:8088/resources?q=${userInput}`)
+    //         //   .then(response => response.json());
+    //         // }
+    //     };
+    //     console.log(data);
 
 
 
