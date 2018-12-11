@@ -13,10 +13,10 @@ const domBuilder =  {
     <button type="submit" id="parkSearchBtn">Search Parks</button>
     </article>
 
-    <article> 
-    <input type="text" id="cuisineSearchBtn" placeholder="Enter Cuisine Type Here">
-    <button type="submit" id=#cuisine-search">Search Restaurants</button>
-    </article>
+  <article id="cuisine-article">
+    <input type="text" name="Cuisines" id="cuisine-input" placeholder="Search by Cuisine">
+    <button type="submit" id="cuisine-search">Search RESTAURANTS</button>
+  </article>
     
     <article>
     <input type="text" id="meetSearch" placeholder="Meetups Search">
@@ -36,10 +36,10 @@ const domBuilder =  {
       <button type="submit" id="park-save">Save</button>
     </article>
 
-    <article id="food-article">
-      <input type="text" name="Cuisines" id="food-return" placeholder="List of Restaurants">
-      <button type="submit" id="food-save">Save</button>
-    </article>
+  <article id="restaurant-article">
+    <input type="text" name="Restaurants" id="food-return" placeholder="List of Restaurants">
+    <button type="submit" id="food-save">Save</button>
+  </article>
 
     <article id="meet-article">
       <input type="text" name="Meetups" id="meet-return" placeholder="List of Meetups">
