@@ -14,8 +14,8 @@ const domBuilder =  {
     </article>
 
     <article> 
-    <input type="text" id="foodSearch" placeholder="Restaurants Search">
-    <button type="submit" id="foodBtn">Search Restaurants</button>
+    <input type="text" id="cuisineSearchBtn" placeholder="Enter Cuisine Type Here">
+    <button type="submit" id=#cuisine-search">Search Restaurants</button>
     </article>
     
     <article>

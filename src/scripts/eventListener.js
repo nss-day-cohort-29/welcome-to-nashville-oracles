@@ -1,12 +1,5 @@
 console.log("hello eventListener.js")
 
-let parksBtn = document.getElementById("parkSearchBtn");
-
-parksBtn.addEventListener("click", function() {
-     console.log("I am clicked!");
- });
-
- 
 cuisinesArray = [
         {
           "cuisine": {
@@ -58,18 +51,17 @@ cuisinesArray = [
 
 let cuisineSearchBtn = document.querySelector("#cuisine-search");
 cuisineSearchBtn.addEventListener("click", () => {
-    let nameVar = document.querySelector('input[name="Cuisines"]').value;
-    console.log("Input values: ", nameVar);
+    let userInput = document.querySelector(`input[name="Cuisines"]`).value;
+    console.log("Input values: ", userInput);
 
     let findId = "";
-    function isCuisine(toBeFound) { 
-        return toBeFound.cuisine_name === nameVar;
+    function isCuisine(toBeFound) {
+      return toBeFound.cuisine_name === userInput;
     }
-    findId = cuisinesArray.find(isCuisine);            
-    console.log(findId); 
+    findId = cuisinesArray.find(isCuisine);
+    console.log(findId);
     // { cuisine_id: 270, cuisine_name: "Beverages" }
 });
-
 // Query Zomato with the number in cuisine_id to get a list of matching
 // restaurants (with their addresses) and populate <article id="restaurant-article">
     //   <input type="text" name="Restaurants" id="food-return" placeholder="List of Restaurants">
@@ -79,7 +71,7 @@ cuisineSearchBtn.addEventListener("click", () => {
 
 let restaurantSaveBtn = document.querySelector("#food-save");
 restaurantSaveBtn.addEventListener("click", () => {
-    let restVar = document.querySelector('input[name="Restaurants"]').value;
+    let restVar = document.querySelector(`input[name="Restaurants"]`).value;
     console.log("Input values: ", restVar);
 });
 
@@ -87,3 +79,41 @@ restaurantSaveBtn.addEventListener("click", () => {
     <input type="text" name="Cuisines" id="food-return" placeholder="List of Restaurants">
     <button type="submit" id="food-save">Save</button>
 </article> */
+console.log("goodbye")
+
+// Form Validation - If blank ... This field is required to search
+// Add "required" to input element so can't return a blank
+// Cuisine also each cuisine to start with a capital letter
+// required pattern="[A-Z][A-Za-z' -]+"
+//   Add to css file - displays when input is invalid
+//   input:invalid {
+//   border: 2px dashed red;
+// }
+
+
+// const eventListeners = {
+//     handleSearchButton() {
+//       let searchInput = document.querySelector("input[name='searchinput']");
+//       let searchQuery = searchInput.value;
+//       data.queryResources(searchQuery)
+//       .then(searchResultsArray => {
+//         console.log(searchResultsArray);
+//         let resourcesFragments = domComponents.createResourcesDocumentFragments(searchResultsArray);
+//         console.log(resourcesFragments);
+//         domBuilder.appendAllResources(resourcesFragments);
+//       });
+//     }
+//   };
+// var inventory = [
+//     {name: 'apples',
+//      quantity: 2},
+//     {name: 'bananas', quantity: 0},
+//     {name: 'cherries', quantity: 5}
+// ];
+
+// function isCherries(fruit) {
+  //     return fruit.name === 'cherries';
+// }
+
+// console.log(inventory.find(isCherries));
+// { name: 'cherries', quantity: 5 }
