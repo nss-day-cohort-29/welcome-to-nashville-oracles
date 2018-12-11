@@ -63,23 +63,34 @@ cuisinesArray = [
   <button type="submit" id="cuisine-search">Search RESTAURANTS</button>
 </article> */
 
+// const eventListeners = {
+//   handleSearchButton() {
+//     let searchInput = document.querySelector("input[name='searchinput']");
+//     let searchQuery = searchInput.value;
+
+//     data.queryResources(searchQuery)
+//     .then(searchResultsArray => {
+//       console.log(searchResultsArray);
+//       let resourcesFragments = domComponents.createResourcesDocumentFragments(searchResultsArray);
+//       console.log(resourcesFragments);
+//       domBuilder.appendAllResources(resourcesFragments);
+//     });
+//   }
+// };
+
 let cuisineSearchBtn = document.querySelector("#cuisine-search");
 cuisineSearchBtn.addEventListener("click", () => {
-    let userInput = document.querySelector(`input[name="Cuisines"]`).value;
-    console.log("Input values: ", userInput);
+  let cuisineInput = document.querySelector("input[name='Cuisines']").value;
+  let userInput = cuisineInput.value;
+  console.log("Input values: ", userInput);
 
-    let findId = "";
-    function isCuisine(toBeFound) {
-      return toBeFound.cuisine_name === userInput;
-    }
-    findId = cuisinesArray.find(isCuisine);
-    console.log(findId);
-    // { cuisine_id: 270, cuisine_name: "Beverages" }
-});
+    data.getDataCuisine(userInput)
+
+    });
 // Query Zomato with the number in cuisine_id to get a list of matching
 // restaurants (with their addresses) and populate <article id="restaurant-article">
 
-/* <article id="restaurant-article">
+/* <article id="food-article">
       <input type="text" name="Restaurants" id="food-return" placeholder="List of Restaurants">
       <button type="submit" id="food-save">Save</button>
 </article> */
