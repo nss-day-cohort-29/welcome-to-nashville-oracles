@@ -20,7 +20,8 @@ domBuilder.appendInputForm();
 
 //              **** Grady      ****
 
-
+let fetch1 = data.parksFetch("disc_golf");
+console.log("disc_golf" + fetch1);
 
 
 //              **** Hannah     ****
