@@ -9,7 +9,15 @@ const domBuilder =  {
    divFormContainer.innerHTML =
     `
     <article> 
-    <input type="text" id="parksSearch" placeholder="Search Parks">
+    
+
+      <select id="parksSearch">
+      <option value="baseball_fields">Baseball</option>
+      <option value="disc_golf">Disc Golf</option>
+      <option value="hiking_trails">hiking trails</option>
+      <option value="walk_jog_paths">Jogging paths</option>
+      </select>
+      
     <button type="submit" id="parkSearchBtn">Search Parks</button>
     </article>
 
