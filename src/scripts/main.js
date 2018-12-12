@@ -22,7 +22,8 @@ domBuilder.appendInputForm();
 
 //              **** Grady      ****
 
-
+// let fetch1 = data.parksFetch(`${bloop}`);
+// console.log("parks search: " + fetch1);
 
 
 //              **** Hannah     ****
