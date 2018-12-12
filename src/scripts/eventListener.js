@@ -1,5 +1,6 @@
 console.log("hello eventListener.js")
 
+<<<<<<< HEAD
 
 let cuisineSearchBtn = document.getElementById("cuisine-search");
 cuisineSearchBtn.addEventListener("click", findfunction);
@@ -45,3 +46,18 @@ function findfunction() {
 //   input:invalid {
 //   border: 2px dashed red;
 // }
+=======
+//search button
+ let concertsBtn = document.getElementById("musicBtn");
+ concertsBtn.addEventListener("click", concertsValue);
+
+ function concertsValue() {
+    let userInput = document.getElementById("musicSearch").value;
+    eventNameData(userInput);
+ }
+
+//save button
+let saveConcertsBtn = document.getElementById("music-save");
+saveConcertsBtn.addEventListener("click");
+console.log("concert save button worked!");
+>>>>>>> master

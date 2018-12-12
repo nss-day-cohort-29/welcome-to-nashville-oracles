@@ -5,3 +5,8 @@
 #display-container {
     border: 3px solid green;
 }
+
+#concert-article {
+    display: flex;
+}
+
