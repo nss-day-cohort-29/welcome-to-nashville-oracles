@@ -7,10 +7,10 @@ console.log("hello data.js")
             let allConcerts = concertResults._embedded.events
             allConcerts.forEach(result => {
                 let artistHTML = result.name
-                let artistID = result._embedded.venues[0].id
+                //let artistID = result._embedded.venues[0].id
                 let venueHTML = result._embedded.venues[0].name
-                console.log(artistHTML, venueHTML, artistID) 
-                domBuilder.appendInputForm2(artistHTML, venueHTML, artistID)  
+                console.log(artistHTML, venueHTML) 
+                domBuilder.appendInputForm2(artistHTML, venueHTML)  
             })
         })
     };

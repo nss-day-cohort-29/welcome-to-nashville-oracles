@@ -37,10 +37,10 @@ const domBuilder =  {
   divDisplayContainer.innerHTML += `
   <article class="concert-article">
   <h4>${results}</h4>
-  <button type="submit" id="music-save${artistID}">Save</button>
+  <button type="submit" id="music-save">Save</button>
   </article>
   `
-  console.log(results);
+  
   }
 }
 //need unique id -> _embedded.events.id
