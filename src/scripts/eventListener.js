@@ -1,6 +1,7 @@
 console.log("hello eventListener.js")
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 let cuisineSearchBtn = document.getElementById("cuisine-search");
 cuisineSearchBtn.addEventListener("click", findfunction);
@@ -47,6 +48,35 @@ function findfunction() {
 //   border: 2px dashed red;
 // }
 =======
+=======
+
+//                     *****           Grady              *****
+
+let parksBtn = document.getElementById("parkSearchBtn");
+
+parksBtn.addEventListener("click", function() {
+     console.log("I am clicked!");
+ });
+
+ //                    *****           Hannah              *****
+
+//BEGIN HANNAH BUTTON:
+ let meetupBtn = document.getElementById("meetBtn");
+    meetupBtn.addEventListener("click", function() {
+    console.log(meetup.queryResources);
+})
+//END HANNAH BUTTON
+
+//BEGIN HANNAH EVENT LISTENER FOR BUTTON CLICK:
+
+
+
+//END HANNAH EVENT LISTENER FOR BUTTON CLICK
+
+
+
+
+>>>>>>> master
 //search button
  let concertsBtn = document.getElementById("musicBtn");
  concertsBtn.addEventListener("click", concertsValue);

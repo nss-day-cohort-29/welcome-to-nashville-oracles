@@ -76,4 +76,14 @@ const domBuilder =  {
   }
 >>>>>>> master
 }
+//call me in main.js!()
+
+//Notes: Check input type="text"?? for results list
+
+//              ******        BEGIN HANNAH SECTION      ******
+
+
+
+
+//              ******        END HANNAH SECTION      ******
 //need unique id -> _embedded.events.id
