@@ -45,4 +45,18 @@ const meetup = {
     //   meetup.getMeetup();
 
     //END HANNAH'S NOTES:
+    let eventNameData = function(userInput) {
+    fetch(`https://app.ticketmaster.com/discovery/v2/events.json?apikey=U4OzVO9CVSB5hFKWe8jwfPW4GQ8NQJqF&city=Nashville&classificationName=music&keyword=${userInput}`)
+        .then(events => events.json())
+        .then(concertResults => {
+            let allConcerts = concertResults._embedded.events
+            allConcerts.forEach(result => {
+                let artistHTML = result.name
+                //let artistID = result._embedded.venues[0].id
+                let venueHTML = result._embedded.venues[0].name
+                console.log(artistHTML, venueHTML) 
+                domBuilder.appendInputForm2(artistHTML, venueHTML)  
+            })
+        })
+    };
 
