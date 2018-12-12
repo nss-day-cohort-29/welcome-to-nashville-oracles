@@ -1,5 +1,61 @@
 console.log("hello data.js")
 
+//FOOD API
+
+//const key = "b57275ff4bf32e085ee9ffa1aa7e6bab";
+
+// const fetchMeta = {
+//   method: "get",
+//   headers: { "user-key": key, "Accept": "application/json", },
+// }
+// const getLocationInfo = location => fetch(`https://developers.zomato.com/api/v2.1/locations?query=${location}`, fetchMeta);
+
+// const getRestaurantsInfo = ({ entity_id, entity_type }) => fetch(`https://developers.zomato.com/api/v2.1/search?entity_id=${entity_id}&entity_type=${entity_type}&q=${keyword}`, fetchMeta);
+// console.log(getLocationInfo);
+
+// This module interacts with the API, meaning all fetch calls
+// to the json-server API will be in this module.
+// API key: b57275ff4bf32e085ee9ffa1aa7e6bab
+
+const data = {
+
+    getDataCuisine(userInput2) {
+    //return fetch(`https://developers.zomato.com/api/v2.1/search?entity_id=1138&entity_type=city&count=10&radius=25?q=${userInput2}`,
+    //return fetch("https://developers.zomato.com/api/v2.1/search?entity_id=1138&entity_type=city&count=10&radius=25",
+    //return fetch(`https://developers.zomato.com/api/v2.1/search?entity_id=1138&entity_type=city&q=${userInput2}`,
+    //return fetch("https://developers.zomato.com/api/v2.1/search?entity_id=1138&entity_type=city&cuisines=`${userInput2}`",
+    //return fetch(`https://developers.zomato.com/api/v2.1/search?entity_id=1138&entity_type=city&q=${userInput2}`,
+    return fetch(`https://developers.zomato.com/api/v2.1/search?entity_id=1138&entity_type=city&q=cuisines=${userInput2}`,      
+    //return fetch("https://developers.zomato.com/api/v2.1/cuisines?city_id=1138",    
+    
+            { headers: { "user-key": "b57275ff4bf32e085ee9ffa1aa7e6bab" } })
+            .then(response => response.json())
+            .then(parsedCuisines => {
+                console.log(parsedCuisines.restaurants)
+                let eatNow = parsedCuisines.restaurants;
+                
+                counter = 0;
+                eatNow.forEach(cuisinesObj => {
+                counter = ++this.count;                
+                console.log(`RESTAURANT: ${cuisinesObj.restaurant.name} CUISINES: ${cuisinesObj.restaurant.cuisines}`)
+                let nameHTML = cuisinesObj.restaurant.name;
+                let addressHTML = cuisinesObj.restaurant.location.address;
+                
+                let divDisplayContainer = document.querySelector("#display-container");
+                   
+                let foodContainer = domComponents.createDomElement("article", "", "foodButtonClass");
+                    divDisplayContainer.appendChild(foodContainer);
+                    foodContainer.innerHTML = `                    
+                    button type="clickSave" value = "${counter} ${cuisinesObj.restaurant.name} ${cuisinesObj.restaurant.location.address}" "id="food-save">Save</button>`
+
+                    //<p>${Counter}. ${cuisinesObj.restaurant.name}: ${cuisinesObj.restaurant.location.address}</p>
+                    //<button type="clickSave" id="food-save">Save</button>`
+                    
+                    })
+                })
+            }
+        }
+
 // MEETUP API FUNCTION
 const meetup = {
     getMeetup() {

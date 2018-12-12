@@ -16,9 +16,9 @@ const domBuilder =  {
     <button type="submit" id="parkSearchBtn">Search Parks</button>
     </article>
 
-    <article> 
-    <input type="text" id="foodSearch" placeholder="restaurants by food type">
-    <button type="submit" id="foodBtn">Search Restaurants</button>
+    <article id="cuisine-article">
+    <input type="text" name="cuisines" id="cuisine-input" placeholder="restaurants by food type">
+    <button type="submit" id="cuisine-search">Search Restauarants</button>
     </article>
     
     <article>
@@ -30,7 +30,31 @@ const domBuilder =  {
     <input type="text" id="musicSearch" placeholder="concerts by genre">
     <button type="submit" id="musicBtn">Search Concerts</button>
     </article>`;
-  },
+
+  // ********** DISPLAY *********
+  let divDisplayContainer = document.querySelector("#display-container");
+  divDisplayContainer.innerHTML = `
+    <article id="park-article">
+      <input type="text" name="Parks" id="park-return" placeholder="List of Parks">
+      <button type="submit" id="park-save">Save</button>
+    </article>
+
+    <article id="food-article">
+      <input type="text" name="Restaurants" id="food-return" placeholder="List of Restaurants">
+      <button type="clickSave" id="food-save">Save</button>
+    </article>
+
+    <article id="meet-article">
+      <input type="text" name="Meetups" id="meet-return" placeholder="List of Meetups">
+      <button type="submit" id="meet-save">Save</button>
+      </article>
+
+    <article id="music-article">
+      <input type="text" name="Concerts" id="music-return" placeholder="List of concerts">
+      <button type="submit" id="music-save">Save</button>
+    </article>`;
+  }, 
+  
   // **** RESULTS ****
   appendInputForm2 (results) {
   let divDisplayContainer = document.querySelector("#display-container");
