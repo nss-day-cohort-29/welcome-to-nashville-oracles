@@ -20,21 +20,7 @@ parksBtn.addEventListener("click", function() {
 
 //BEGIN HANNAH EVENT LISTENER FOR BUTTON CLICK:
 
-const meetupEventListener = {
-    handleMeetupSearchButton() {
-        let searchInput = document.querySelector("input[name='searchInput']");
-        let searchQuery = searchInput.value;
 
-        data.queryResources(searchQuery)
-        .then(searchResultsArray => {
-            console.log(searchResultsArray);
-            let resourcesFragments = domComponents.createResourcesDocument(searchResultsArray);
-                console.log(resourcesFragments);
-                domBuilder.appendAllResources(resourcesFragments);
-        })
-    }
-
-};
 
 //END HANNAH EVENT LISTENER FOR BUTTON CLICK
 

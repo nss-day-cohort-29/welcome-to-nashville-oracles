@@ -1,22 +1,24 @@
 console.log("hello data.js")
 
 // MEETUP API FUNCTION
-// const meetup = {
-//     getMeetup() {
-//         return fetch("https://www.eventbriteapi.com/v3/events/search/?q=Nashville&price=free&token=DMEKTJT35DBRP6PGFBXA") 
-//         //   headers: {
-//             // "Authorization": "Bearer DMEKTJT35DBRP6PGFBXA",
-//             // "Content-Type": "application/json"
-//         //   },
-//         //  mode:'no-cors',
-//         //  method: 'GET'
-//         // })
-//         .then(response => response.json())
-//         .then(get => console.log(get))
-//         .catch(error => console.log(error));
-//     }
-//   };
-//   meetup.getMeetup();
+const meetup = {
+    getMeetup() {
+        return fetch("https://www.eventbriteapi.com/v3/events/search/?q=Nashville&price=free&token=DMEKTJT35DBRP6PGFBXA") 
+        //   headers: {
+            // "Authorization": "Bearer DMEKTJT35DBRP6PGFBXA",
+            // "Content-Type": "application/json"
+        //   },
+        //  mode:'no-cors',
+        //  method: 'GET'
+        // })
+        .then(response => response.json())
+        .then(get => console.log(get))
+        .catch(error => console.log(error));
+    }
+  };
+  meetup.getMeetup();
+
+//BEGIN HANNAH'S NOTES
 
 //Hannah's Eventbrite Info:
 //Your personal OAuth token: DMEKTJT35DBRP6PGFBXA
@@ -29,17 +31,18 @@ console.log("hello data.js")
     //events[i].description
     //events[i].url
 
-
-    const meetup = {
-        getMeetup() {
-            return fetch("https://www.eventbriteapi.com/v3/events/search/?q=Nashville&price=free&token=DMEKTJT35DBRP6PGFBXA") 
-            .then(response => response.json());
-        },
-        queryResources(userInput) {
-            return fetch(`http://localhost:8080/?q=${userInput}`)
-            .then(get => console.log(get));
-            // .catch(error => console.log(error));
-        }
-      };
+    // const meetup = {
+    //     getMeetup() {
+    //         return fetch("https://www.eventbriteapi.com/v3/events/search/?q=Nashville&price=free&token=DMEKTJT35DBRP6PGFBXA") 
+    //         .then(response => response.json());
+    //     },
+    //     queryResources(userInput) {
+    //         return fetch(`http://localhost:8080/?q=${userInput}`)
+    //         .then(get => console.log(get));
+    //         // .catch(error => console.log(error));
+    //     }
+    //   };
     //   meetup.getMeetup();
+
+    //END HANNAH'S NOTES:
 
