@@ -1,7 +1,15 @@
 console.log("hello eventListener.js")
 
-let parksBtn = document.getElementById("parkSearchBtn");
+//search button
+ let concertsBtn = document.getElementById("musicBtn");
+ concertsBtn.addEventListener("click", concertsValue);
 
-parksBtn.addEventListener("click", function() {
-     console.log("I am clicked!");
- });
+ function concertsValue() {
+    let userInput = document.getElementById("musicSearch").value;
+    eventNameData(userInput);
+ }
+
+//save button
+let saveConcertsBtn = document.getElementById("music-save");
+saveConcertsBtn.addEventListener("click");
+console.log("concert save button worked!");

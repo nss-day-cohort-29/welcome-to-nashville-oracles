@@ -9,8 +9,10 @@ domBuilder.appendInputForm();
 
 
 //              **** Allison     ****
+//from grunt resource tracker:
 
-
+//domBuilder.appendSearchContainer();
+//domBuilder.appendResourceContainers();
 
 
 //              **** Colleen    ****
