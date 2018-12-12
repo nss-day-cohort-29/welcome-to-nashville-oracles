@@ -13,7 +13,7 @@ function findfunction() {
     let displayInfo = document.getElementById("display-container");
      let header = document.createElement("h4");
      displayInfo.innerHTML = " ";
-     header.innerHTML = "Restaurants";
+     header.innerHTML = "Click and Save Your Restaurant";
      displayInfo.appendChild(header);
 
 };

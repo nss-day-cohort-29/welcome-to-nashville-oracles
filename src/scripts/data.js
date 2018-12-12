@@ -15,8 +15,6 @@ console.log("hello data.js")
 // to the json-server API will be in this module.
 // API key: b57275ff4bf32e085ee9ffa1aa7e6bab
 
-let foodData = {};
-
 const data = {
 
     getDataCuisine(userInput) {
@@ -33,19 +31,30 @@ const data = {
             .then(parsedCuisines => {
                 console.log(parsedCuisines.restaurants)
                 let eatNow = parsedCuisines.restaurants;
-                                               
+                
+                counter = 0;
                 eatNow.forEach(cuisinesObj => {
+                counter = ++this.count;                
                 console.log(`RESTAURANT: ${cuisinesObj.restaurant.name} CUISINES: ${cuisinesObj.restaurant.cuisines}`)
                 let nameHTML = cuisinesObj.restaurant.name;
                 let addressHTML = cuisinesObj.restaurant.location.address;
-                    })
+                
+                let divDisplayContainer = document.querySelector("#display-container");
                    
+                let foodContainer = domComponents.createDomElement("article", "", "foodButtonClass");
+                    divDisplayContainer.appendChild(foodContainer);
+                    foodContainer.innerHTML = `                    
+                    button type="clickSave" value = "${counter} ${cuisinesObj.restaurant.name} ${cuisinesObj.restaurant.location.address}" "id="food-save">Save</button>`
+
+                    //<p>${Counter}. ${cuisinesObj.restaurant.name}: ${cuisinesObj.restaurant.location.address}</p>
+                    //<button type="clickSave" id="food-save">Save</button>`
+                    
+                    })
                 })
             }
-       }
-
+        }
 //     getDataRestaurants(consoleInput) {
-//         //return fetch(`https://developers.zomato.com/api/v2.1/search?entity_id=1138&entity_type=city&count=10&radius=25?q=${userInput}`,
+         //return fetch(`https://developers.zomato.com/api/v2.1/search?entity_id=1138&entity_type=city&count=10&radius=25?q=${userInput}`,
 //         return fetch("https://developers.zomato.com/api/v2.1/search?entity_id=1138&entity_type=city&count=10&radius=25",
 //             { headers: { "user-key": "b57275ff4bf32e085ee9ffa1aa7e6bab" } })
 //             .then(response => response.json())
