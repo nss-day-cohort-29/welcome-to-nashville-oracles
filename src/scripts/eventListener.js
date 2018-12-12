@@ -1,16 +1,14 @@
 console.log("hello eventListener.js")
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 
 let cuisineSearchBtn = document.getElementById("cuisine-search");
 cuisineSearchBtn.addEventListener("click", findfunction);
 
 function findfunction() {
-  let userInput = document.getElementById("cuisine-input").value;
-  console.log(userInput)
+  let userInput2 = document.getElementById("cuisine-input").value;
+  console.log(userInput2)
   
-    data.getDataCuisine(userInput)
+    data.getDataCuisine(userInput2)
 
     let displayInfo = document.getElementById("display-container");
      let header = document.createElement("h4");
@@ -47,8 +45,7 @@ function findfunction() {
 //   input:invalid {
 //   border: 2px dashed red;
 // }
-=======
-=======
+
 
 //                     *****           Grady              *****
 
@@ -76,7 +73,7 @@ parksBtn.addEventListener("click", function() {
 
 
 
->>>>>>> master
+
 //search button
  let concertsBtn = document.getElementById("musicBtn");
  concertsBtn.addEventListener("click", concertsValue);
@@ -88,6 +85,6 @@ parksBtn.addEventListener("click", function() {
 
 //save button
 let saveConcertsBtn = document.getElementById("music-save");
-saveConcertsBtn.addEventListener("click");
+saveConcertsBtn.addEventListener("click", function() {
 console.log("concert save button worked!");
->>>>>>> master
+})

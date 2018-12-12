@@ -19,13 +19,13 @@ console.log("hello data.js")
 
 const data = {
 
-    getDataCuisine(userInput) {
-    //return fetch(`https://developers.zomato.com/api/v2.1/search?entity_id=1138&entity_type=city&count=10&radius=25?q=${userInput}`,
+    getDataCuisine(userInput2) {
+    //return fetch(`https://developers.zomato.com/api/v2.1/search?entity_id=1138&entity_type=city&count=10&radius=25?q=${userInput2}`,
     //return fetch("https://developers.zomato.com/api/v2.1/search?entity_id=1138&entity_type=city&count=10&radius=25",
-    //return fetch(`https://developers.zomato.com/api/v2.1/search?entity_id=1138&entity_type=city&q=${userInput}`,
-    //return fetch("https://developers.zomato.com/api/v2.1/search?entity_id=1138&entity_type=city&cuisines=`${userInput}`",
-    //return fetch(`https://developers.zomato.com/api/v2.1/search?entity_id=1138&entity_type=city&q=${userInput}`,
-    return fetch(`https://developers.zomato.com/api/v2.1/search?entity_id=1138&entity_type=city&q=cuisines=${userInput}`,      
+    //return fetch(`https://developers.zomato.com/api/v2.1/search?entity_id=1138&entity_type=city&q=${userInput2}`,
+    //return fetch("https://developers.zomato.com/api/v2.1/search?entity_id=1138&entity_type=city&cuisines=`${userInput2}`",
+    //return fetch(`https://developers.zomato.com/api/v2.1/search?entity_id=1138&entity_type=city&q=${userInput2}`,
+    return fetch(`https://developers.zomato.com/api/v2.1/search?entity_id=1138&entity_type=city&q=cuisines=${userInput2}`,      
     //return fetch("https://developers.zomato.com/api/v2.1/cuisines?city_id=1138",    
     
             { headers: { "user-key": "b57275ff4bf32e085ee9ffa1aa7e6bab" } })
