@@ -2,7 +2,6 @@
 
 console.log("hello domComponents.js")
 
-<<<<<<< HEAD
 const domComponents = {
     createDomElement (elementType, content, cssClass) {
       const element = document.createElement(elementType);
@@ -13,7 +12,6 @@ const domComponents = {
       return element;
     }
   }
-=======
 /* const domComponents = {
     createDomElement () {
     //some function here
@@ -46,4 +44,3 @@ appendResultsInput(); */
 
 //write function using values from data.js 
 //call function in data.js - pass in results from API
->>>>>>> master
